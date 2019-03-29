@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-elm-app-20190329163312-authRole",
+            "UnauthRoleArn": "arn:aws:iam::060997615305:role/amplify-elm-app-20190329163312-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::060997615305:role/amplify-elm-app-20190329163312-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-elm-app-20190329163312-deployment",
+            "UnauthRoleName": "amplify-elm-app-20190329163312-unauthRole",
+            "StackName": "amplify-elm-app-20190329163312",
+            "StackId": "arn:aws:cloudformation:eu-west-1:060997615305:stack/amplify-elm-app-20190329163312/7cb87a00-5240-11e9-8083-0a25aff68e4e"
+        },
+        "categories": {
+            "auth": {
+                "cognito3f9f64c3": {}
+            }
+        }
+    }
+}

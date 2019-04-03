@@ -6,13 +6,14 @@
     "aws-amplify": "^1.1.23"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "4.5.2",
+    "json-loader": "^0.5.7",
     "webpack": "4.17.1",
     "webpack-cli": "3.1.0",
-    "copy-webpack-plugin": "4.5.2",
     "webpack-dev-server": "3.1.5"
   },
   "scripts": {
     "start": "webpack && webpack-dev-server --mode development",
-    "build": "webpack"
+    "build": "webpack && elm make src/Main.elm --output=dist/elm.js"
   }
 }

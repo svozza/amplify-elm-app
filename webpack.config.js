@@ -1,3 +1,5 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -8,10 +10,18 @@ module.exports = {
     },
     module: {
         rules: [
+            // {
+            //     test: /\.json$/,
+            //     loader: 'json-loader'
+            // },
             {
-                test: /\.json$/,
-                loader: 'json'
+                test: /\.js$/,
+                exclude: /node_modules/
             }
         ]
-    }
+    },
+    plugins: [
+        new CopyWebpackPlugin(['index.html']),
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };

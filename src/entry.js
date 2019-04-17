@@ -18,12 +18,12 @@ app.ports.signup.subscribe(data => {
         validationData: []
     })
         .then(data => {
-            console.log(data);
-            app.ports.signupSuccess.send({username: data.user})
+            console.log('Signup success: ' + JSON.stringify(data));
+            app.ports.signupSuccess.send({username: data.user.username})
         })
         .catch(err => {
-            console.log(err);
-            app.ports.errors.send(err)
+            console.log('Signup Error: ' + JSON.stringify(err));
+            app.ports.errors.send(err.message)
         });
 
 // After retrieving the confirmation code from the user
